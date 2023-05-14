@@ -6,6 +6,7 @@
           v-model="categoryIdList.category1Id"
           placeholder="请选择"
           @change="handler1"
+          :disabled="!show"
         >
           <el-option
             :label="c1.name"
@@ -20,6 +21,7 @@
           v-model="categoryIdList.category2Id"
           placeholder="请选择"
           @change="handler2"
+          :disabled="!show"
         >
           <el-option
             :label="c2.name"
@@ -34,6 +36,7 @@
           v-model="categoryIdList.category3Id"
           placeholder="请选择"
           @change="handler3"
+          :disabled="!show"
         >
           <el-option
             :label="c3.name"
@@ -63,6 +66,7 @@ export default {
       },
     }
   },
+  props:['show'],
   mounted() {
     this.getCategory1()
   },

@@ -86,7 +86,7 @@ export const constantRoutes = [
         path: 'attr',
         name: 'Attr',
         component: () => import('@/views/product/attr/index'),
-        meta: { title: '品牌属性管理'}
+        meta: { title: '平台属性管理属性管理'}
 
       }
     ]
